@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="style.css" rel="stylesheet">
+    <title>SamTech Site</title>
+</head>
+<style>
+b{
+    font-weight: bold;
+}
+</style>
+<body>
+<div class="hi">
+    <ul>
+        <li>
+            <a class="list-item" href="index.html">
+                <i class="fa fa-home " style="font-size:30px;"><b>Home</b></i>
+            </a>
+        </li>
+        <li>
+            <a class="list-item" href="about.html">
+                <i style="font-size:30px;">About</i>
+            </a>
+        </li>
+        </li>
+    
+        <li>
+            <a class="list-item" href="services.html">
+                <i style="font-size:30px; ">Services</i>
+            </a>
+        </li>
+        <li>
+            <a class="list-item" href="contact.html">
+                <i style="font-size:30px;">Get Started</i>
+            </a>
+        </li>
+    
+    </ul>
+</div>
+<div class="cont">
+    <div  style="width: 350px; height: 500px; box-shadow: 0 0 40px 20px rgba(0,0,0,0.26); display: flex; align-items: center; justify-content: center;" class="card">
+        <div class="inner-box" id="card">
+            <div class="card-front">
+                <h2>LOGIN</h2>
+                <form action="index.html">
+                    <input type="email" class="input-box" placeholder="email" required>
+                    <input type="password" class="input-box" placeholder="password" required>
+                    <button type="submit" class="submit-btn">LOGIN</button>
+                    <input type="checkbox"><span>Remember Me</span>
+                </form>
+                <button type="button" class="btn" onclick="openRegister()">I'm new here</button>
+                <a href="">Forgot Password</a>
+            </div>
+            <div class="card-back">
+                <h2>REGISTER</h2>
+                <form>
+                    <input type="text" class="input-box" placeholder="Your name" required>
+                    <input type="email" class="input-box" placeholder="email" required>
+                    <input type="password" class="input-box" placeholder="password" required>
+                    <button type="submit" class="submit-btn" onclick="openLogin()">REGISTER</button>
+                    <input type="checkbox"><span>Remember Me</span>
+                </form>
+                <button type="button" class="btn" onclick="openLogin()">I have an account</button>
+                <a href="">Forgot Password</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="start">
+    <h1 style="margin-top: -500px; margin-left: 150px;" >Get started with Samtech.</h1>
+    <h2 style="margin-top: -500px; margin-left: 150px;" >Register with us and access all of our services.</h2>
+</div>
+<footer style="margin-top: 500px; text-align: center; background-color: burlywood; height: 40vh; width: 100%;">
+    <h1 style="padding-top: 80px;">CONTACT ME</h1>
+    <a style="margin-top: 90px;" href="https://www.facebook.com/samuel.luiz.5201254" class="fa fa-facebook"></a>
+    <a style="margin-top: 90px;" href=" https://wa.me/0705876748" class="fa fa-whatsapp"></a>
+    <a style="margin-top: 90px;" href="www.linkedin.com/in/isalanya-mwase-sam-491623213" class="fa fa-linkedin"></a>
+    <a style="margin-top: 90px;" href="#" class="fa fa-google"></a>
+    <a style="margin-top: 90px;" href="#" class="fa fa-instagram"></a>
+    <div class="container px-4 px-lg-5"><div style="margin-top: 10px;"class="small text-center text-muted">Copyright &copy; 2021 - SamTech</div>
+</footer>
+<script>
+
+var card = document.getElementById("card");
+
+function openRegister(){
+    card.style.transform = "rotateY(-180deg)";
+}
+function openLogin(){
+    card.style.transform = "rotateY(0deg)";
+}
+</script>
